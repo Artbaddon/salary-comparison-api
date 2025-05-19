@@ -11,6 +11,12 @@ app.get("/", (req, res) => {
 });
 
 app.post("/api/salary", (req, res) => {
+  if (typeof req.body?.salary !== "number" || req.body.salary <= 0) {
+    return res.status(400).json({
+      error: "Invalid salary",
+      message: "Salary must be a positive number",
+    });
+  }
   console.log("Body received:", req.body);
   let { salary } = req.body;
 
