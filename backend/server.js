@@ -15,5 +15,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api_v1", salaryRouter);
 
 app.listen(PORT, () => {
-  console.log(`Server is running on htpp://localhost${PORT}`);
+  console.log(`Server is running on http://localhost${PORT}`);
 });
