@@ -51,258 +51,193 @@
         </form>
       </div>
 
-      <!-- Tarjeta de Clasificación Principal -->
-      <div class="row mb-5">
-        <div class="col-md-8 mx-auto">
-          <div class="card salary-class-card shadow" id="salaryClassCard">
-            <div
-              class="card-header"
-              style="background-color: #f44336; color: white"
-            >
-              <h3 class="card-title mb-0">
-                <i class="fas fa-crown me-2"></i>Tu Clasificación
-              </h3>
-            </div>
-            <div class="card-body">
-              <h2 class="text-center mb-4" style="color: #f44336">
-                Élite Económica
-              </h2>
-              <div class="row">
-                <div class="col-md-6">
-                  <p><strong>Rango Salarial Anual:</strong></p>
-                  <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-dark me-2">Mín</span>
-                    <span class="min-salary-card">$50,000,000</span>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <span class="badge bg-dark me-2">Máx</span>
-                    <span class="max-salary-card">$99,999,999</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <p>
-                    <strong>Salario Diario:</strong
-                    ><span class="mx-1 daily-salary-class-card">$1,666,666.67</span>
-                  </p>
-                  <p>
-                    <strong>Descripción:</strong
-                    ><span class="mx-1 description-class-card">
-                      CEOs de grandes empresas, inversionistas
-                      internacionales.</span
-                    >
-                  </p>
-                </div>
+      <!-- Tarjeta de Clasificación Principal, Comparativa, and Referencias Salariales -->
+      <div id="resultsSection">
+        <!-- Tarjeta de Clasificación Principal -->
+        <div class="row mb-5">
+          <div class="col-md-8 mx-auto">
+            <div class="card salary-class-card shadow" id="salaryClassCard">
+              <div
+                class="card-header"
+                style="background-color: #f44336; color: white"
+              >
+                <h3 class="card-title mb-0">
+                  <i class="fas fa-crown me-2"></i>Tu Clasificación
+                </h3>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Comparativa con otros salarios -->
-      <div class="row mb-5">
-        <div class="col-12">
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">
-                <i class="fas fa-chart-bar me-2"></i>Comparativa con Otros
-                Salarios
-              </h6>
-            </div>
-            <div class="card-body">
-              <div class="mb-4">
-                <div class="d-flex justify-content-between mb-1">
-                  <span>Tu salario (Élite Económica)</span>
-                  <strong>$1,666,666.67/día</strong>
-                </div>
-                <div
-                  class="comparative-bar user-salary"
-                  style="width: 100%"
-                ></div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                      <span>Luis Carlos Sarmiento</span>
-                      <strong>$72,320,000/día (1.45×)</strong>
+              <div class="card-body">
+                <h2 class="text-center mb-4" style="color: #f44336">
+                  Élite Económica
+                </h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p><strong>Rango Salarial Anual:</strong></p>
+                    <div class="d-flex align-items-center mb-3">
+                      <span class="badge bg-dark me-2">Mín</span>
+                      <span class="min-salary-card">$50,000,000</span>
                     </div>
-                    <div
-                      class="comparative-bar"
-                      style="width: 145%; background-color: #4e73df"
-                    ></div>
+                    <div class="d-flex align-items-center">
+                      <span class="badge bg-dark me-2">Máx</span>
+                      <span class="max-salary-card">$99,999,999</span>
+                    </div>
                   </div>
-
-                  <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                      <span>CEO de Bancolombia</span>
-                      <strong>$5,000,000/día (0.10×)</strong>
-                    </div>
-                    <div
-                      class="comparative-bar"
-                      style="width: 10%; background-color: #4e73df"
-                    ></div>
-                  </div>
-
-                  <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                      <span>Presidente de la República</span>
-                      <strong>$1,333,333/día (0.03×)</strong>
-                    </div>
-                    <div
-                      class="comparative-bar"
-                      style="width: 3%; background-color: #1cc88a"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                      <span>Ministro</span>
-                      <strong>$833,333/día (0.02×)</strong>
-                    </div>
-                    <div
-                      class="comparative-bar"
-                      style="width: 2%; background-color: #1cc88a"
-                    ></div>
-                  </div>
-
-                  <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                      <span>Ingeniero Senior</span>
-                      <strong>$166,666/día (0.00×)</strong>
-                    </div>
-                    <div
-                      class="comparative-bar"
-                      style="width: 0.5%; background-color: #36b9cc"
-                    ></div>
-                  </div>
-
-                  <div class="mb-3">
-                    <div class="d-flex justify-content-between mb-1">
-                      <span>Salario Mínimo 2024</span>
-                      <strong>$43,333/día (0.00×)</strong>
-                    </div>
-                    <div
-                      class="comparative-bar min-salary"
-                      style="width: 0.1%"
-                    ></div>
+                  <div class="col-md-6">
+                    <p>
+                      <strong>Salario Diario:</strong
+                      ><span class="mx-1 daily-salary-class-card"
+                        >$1,666,666.67</span
+                      >
+                    </p>
+                    <p>
+                      <strong>Descripción:</strong
+                      ><span class="mx-1 description-class-card">
+                        CEOs de grandes empresas, inversionistas
+                        internacionales.</span
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Referencias Salariales -->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="mb-4">
-            <i class="fas fa-users me-2"></i>Referencias Salariales
-          </h3>
-
-          <div class="row">
-            <!-- Empresarios -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow">
-                <div class="card-header bg-primary text-white">
-                  <h5 class="mb-0">
-                    <i class="fas fa-briefcase me-2"></i>Empresarios
-                  </h5>
+        <!-- Comparativa con otros salarios -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">
+                  <i class="fas fa-chart-bar me-2"></i>Comparativa con Otros
+                  Salarios
+                </h6>
+              </div>
+              <div class="card-body">
+                <div class="mb-4" id="yourSalaryCard">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>Tu salario (Élite Económica)</span>
+                    <strong>$1,666,666.67/día</strong>
+                  </div>
+                  <div
+                    class="comparative-bar user-salary"
+                    style="width: 10%"
+                  ></div>
                 </div>
-                <div class="card-body">
-                  <div class="reference-card card empresario p-3">
-                    <h6>Luis Carlos Sarmiento</h6>
-                    <p class="mb-1">
-                      <strong>Salario diario:</strong> $72,320,000
-                    </p>
-                    <small class="text-muted">1668.92× salario mínimo</small>
-                  </div>
 
-                  <div class="reference-card card empresario p-3">
-                    <h6>CEO de Bancolombia</h6>
-                    <p class="mb-1">
-                      <strong>Salario diario:</strong> $5,000,000
-                    </p>
-                    <small class="text-muted">115.38× salario mínimo</small>
-                  </div>
+                <div class="row comparative-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                  <div class="reference-card card empresario p-3">
-                    <h6>Gerente de Empresa Mediana</h6>
-                    <p class="mb-1">
-                      <strong>Salario diario:</strong> $333,333
-                    </p>
-                    <small class="text-muted">7.69× salario mínimo</small>
+        <!-- Referencias Salariales -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="mb-4">
+              <i class="fas fa-users me-2"></i>Referencias Salariales
+            </h3>
+
+            <div class="row">
+              <!-- Empresarios -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                  <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                      <i class="fas fa-briefcase me-2"></i>Empresarios
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="reference-card card empresario p-3">
+                      <h6>Luis Carlos Sarmiento</h6>
+                      <p class="mb-1">
+                        <strong>Salario diario:</strong> $72,320,000
+                      </p>
+                      <small class="text-muted">1668.92× salario mínimo</small>
+                    </div>
+
+                    <div class="reference-card card empresario p-3">
+                      <h6>CEO de Bancolombia</h6>
+                      <p class="mb-1">
+                        <strong>Salario diario:</strong> $5,000,000
+                      </p>
+                      <small class="text-muted">115.38× salario mínimo</small>
+                    </div>
+
+                    <div class="reference-card card empresario p-3">
+                      <h6>Gerente de Empresa Mediana</h6>
+                      <p class="mb-1">
+                        <strong>Salario diario:</strong> $333,333
+                      </p>
+                      <small class="text-muted">7.69× salario mínimo</small>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Políticos -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow">
-                <div class="card-header bg-success text-white">
-                  <h5 class="mb-0">
-                    <i class="fas fa-landmark me-2"></i>Políticos
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <div class="reference-card card politico p-3">
-                    <h6>Presidente de la República</h6>
-                    <p class="mb-1">
-                      <strong>Salario diario:</strong> $1,333,333
-                    </p>
-                    <small class="text-muted">30.77× salario mínimo</small>
+              <!-- Políticos -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                  <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                      <i class="fas fa-landmark me-2"></i>Políticos
+                    </h5>
                   </div>
+                  <div class="card-body">
+                    <div class="reference-card card politico p-3">
+                      <h6>Presidente de la República</h6>
+                      <p class="mb-1">
+                        <strong>Salario diario:</strong> $1,333,333
+                      </p>
+                      <small class="text-muted">30.77× salario mínimo</small>
+                    </div>
 
-                  <div class="reference-card card politico p-3">
-                    <h6>Ministro</h6>
-                    <p class="mb-1">
-                      <strong>Salario diario:</strong> $833,333
-                    </p>
-                    <small class="text-muted">19.23× salario mínimo</small>
-                  </div>
+                    <div class="reference-card card politico p-3">
+                      <h6>Ministro</h6>
+                      <p class="mb-1">
+                        <strong>Salario diario:</strong> $833,333
+                      </p>
+                      <small class="text-muted">19.23× salario mínimo</small>
+                    </div>
 
-                  <div class="reference-card card politico p-3">
-                    <h6>Congresista</h6>
-                    <p class="mb-1">
-                      <strong>Salario diario:</strong> $633,333
-                    </p>
-                    <small class="text-muted">14.62× salario mínimo</small>
+                    <div class="reference-card card politico p-3">
+                      <h6>Congresista</h6>
+                      <p class="mb-1">
+                        <strong>Salario diario:</strong> $633,333
+                      </p>
+                      <small class="text-muted">14.62× salario mínimo</small>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Profesionales y Referencias -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow">
-                <div class="card-header bg-info text-white">
-                  <h5 class="mb-0">
-                    <i class="fas fa-user-tie me-2"></i>Profesionales
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <div class="reference-card card profesional p-3">
-                    <h6>Ingeniero Senior</h6>
-                    <p class="mb-1">
-                      <strong>Salario diario:</strong> $166,666
-                    </p>
-                    <small class="text-muted">3.85× salario mínimo</small>
+              <!-- Profesionales y Referencias -->
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                  <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">
+                      <i class="fas fa-user-tie me-2"></i>Profesionales
+                    </h5>
                   </div>
+                  <div class="card-body">
+                    <div class="reference-card card profesional p-3">
+                      <h6>Ingeniero Senior</h6>
+                      <p class="mb-1">
+                        <strong>Salario diario:</strong> $166,666
+                      </p>
+                      <small class="text-muted">3.85× salario mínimo</small>
+                    </div>
 
-                  <div class="reference-card card referencia p-3">
-                    <h6>Salario Mínimo 2024</h6>
-                    <p class="mb-1"><strong>Salario diario:</strong> $43,333</p>
-                    <small class="text-muted">1.00× salario mínimo</small>
-                  </div>
+                    <div class="reference-card card referencia p-3">
+                      <h6>Salario Mínimo 2024</h6>
+                      <p class="mb-1"><strong>Salario diario:</strong> $43,333</p>
+                      <small class="text-muted">1.00× salario mínimo</small>
+                    </div>
 
-                  <div class="reference-card card referencia p-3">
-                    <h6>Trabajador Informal</h6>
-                    <p class="mb-1"><strong>Salario diario:</strong> $20,000</p>
-                    <small class="text-muted">0.46× salario mínimo</small>
+                    <div class="reference-card card referencia p-3">
+                      <h6>Trabajador Informal</h6>
+                      <p class="mb-1"><strong>Salario diario:</strong> $20,000</p>
+                      <small class="text-muted">0.46× salario mínimo</small>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -322,6 +257,7 @@
     </footer>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/editCards.js"></script>
+    <script src="assets/js/services/services.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
